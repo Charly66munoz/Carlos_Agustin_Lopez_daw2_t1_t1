@@ -198,18 +198,18 @@ function mostrarResultados(){
     if (puntosGame[0] === puntosGame[1]){
         Swal.fire({
             title: "¡Empate!",
-            text: `Empate! presione "Comenzar juego" para jugar otra ronda`,
+            text: `Presione "Comenzar juego" para jugar otra ronda`,
         });
     }else if (puntosGame[0] > puntosGame[1]){
         Swal.fire({
             title: "¡Has perdido!",
-            text: `La banca ha ganado!, presione "Comenzar juego" para jugar otra ronda`,
+            text: `Presione "Comenzar juego" para jugar otra ronda`,
         });
         
     } else{
         Swal.fire({
-            title: "Has Ganado",
-            text: `${name} ha ganado! presione "Comenzar juego" para jugar otra ronda`,
+            title: "Has ganado",
+            text: `Presione "Comenzar juego" para jugar otra ronda`,
         });
     }
 }
