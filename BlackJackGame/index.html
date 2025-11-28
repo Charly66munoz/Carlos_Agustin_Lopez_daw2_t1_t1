@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="utils/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header class="container-fluid text-center">
+        <nav class="d-flex justify-content-center align-items-center text-center container-fluid"  >
+            <div class="col-8" id="divCompanyName">
+                <h1 id="companyName">BLACK LOPEZ JACK</h1>
+            </div>
+            <div class="col-4" id="startButtonContainer">
+                <button  id="startButton">Comenzar juego</button>
+            </div>
+        </nav>
+    </header>
+    <main  class=" row  mainSheat">
+        <div class="row justify-content-around  align-items-center">
+            <div class="col-6 col-md-3"  >
+                <div class="card col-12 mx-auto" id="cpuChangger">
+                    
+                    <img src="utils/img/baraja/red.png" id="cardImg">
+                </div>
+                
+                
+            </div>
+            <div class="col-6 col-md-3" >
+                <div class="card col-12 mx-auto" id="playerChangger">
+                    <img src="utils/img/baraja/blue.png" id="cardImgPlayer">
+                </div>
+                
+            </div>
+        </div>
+        <div class="row justify-content-around  align-items-center">
+            <div class="col col-md-3"  >
+                <div class="d-flex justify-content-center gap-2 mt-3" id="cpuDiv">
+                    <!--no-->
+                </div>
+                
+            </div>
+            <div class="col col-md-3" >
+                <div class="d-flex justify-content-center gap-2 mt-3" id="playerDivbuttons">
+                    <!-- <button id="iragustin" class="col-4 btn btn-success ">Ir</button>
+                    <button id="iragustin" class="col-4 btn btn-danger ">Stop</button> -->
+                </div>
+                
+            </div>
+        </div>
+        <div class="row justify-content-around  align-items-center">
+            <div class="col col-md-3"  >
+                <div class="d-flex justify-content-center gap-2 mt-3" >
+                    <!--no-->
+                </div>     
+            </div>
+            <div class="col col-md-3" >
+                <div class="d-flex justify-content-center gap-2 mt-3" id="playerDivpuntos">
+                    
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+<script src="utils/js/entity/card.js"></script>    
+<script src="utils/js/controller/mazo.js"></script>    
+<script src="utils/js/index.js"></script>    
+</body>
+</html>
