@@ -4,7 +4,7 @@ nameNotNull();
 function nameNotNull(){
     name = prompt("Porfavor ingrese el nombre del jugador");
 
-    if (name === null){
+    if (name === null || name === ""){
     alert("Debe ingresar el nombre del jugador");
     nameNotNull()
     }
@@ -147,7 +147,7 @@ function dealerPlay(cons){
     let contador = 0;
     let i= 0;
     for (let index = 0; index < newCons.length ; index++) {  
-        if (contador < 18){        
+        if (contador < 17){        
             let card = new Card(newCons[index].getCard())   
             contador += card.descontructor();
             console.log(contador+" "+index)
